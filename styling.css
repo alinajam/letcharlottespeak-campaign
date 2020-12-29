@@ -1,0 +1,59 @@
+/* Entire page (background color, etc) */
+body {
+  
+}
+
+/* different headings */
+h1{
+	
+}
+h2{
+	
+}
+h3{
+	
+}
+h4{
+	
+}
+
+/* paragraph text */
+p{
+	
+}
+/* LINKS */
+/* unvisited link */
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: red;
+}
+
+/* local tags */
+
+.img{
+	
+}
+.nav{
+	
+}
+
+/* when we are on a specific page on the nav bar */
+a.selected:link{
+	text-decoration: underline;
+}
