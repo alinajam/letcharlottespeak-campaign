@@ -14,10 +14,6 @@
  
 </style>
 
-<!-- for Javascript -->
-<script>
-</script>
-
 </head>
 
 <body>
@@ -31,13 +27,62 @@
 	<span><a href="news.html">News Articles</a></span>
 </h3>
 
-<div class=img><img src="images/image1.jpg" alt="Image from social media" style="height:400px;"></div>
+<!--slideshow-->
+<div class="css-slideshow">
+<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	  <img src="images/image1.jpg" style="height:400px">
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="images/image2.JPG" style="height:400px">
+	</div>
+
+	<div class="mySlides fade">
+		<img src="images/image3.JPG" style="height:400px">
+	  </div>
+	
+</div>
+<br>
+	
+	<div style="text-align:center">
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	</div>
+
+</div>
 
 <h2>Introduction</h2>
 <p>Charlotte Kirk is an actor who was sexually violated by a powerful Hollywood executive and silenced with a coerced non-disclosure agreement. 
 Read about her story <a href="https://www.lamag.com/mag-features/charlotte-kirk-interview" target="_blank">here</a>. <br>
 Please amplify this campaign by sharing it with your networks and posting a selfie in a mask with #LetCharlotteSpeak on it. Thank you!
 </p>
+
+<!-- for Javascript -->
+<script>
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {
+			slideIndex = 1}    
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active";
+		setTimeout(showSlides, 6000); 
+	}
+</script>
 
 </body>
 
