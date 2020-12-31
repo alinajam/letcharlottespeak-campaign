@@ -105,10 +105,10 @@ a:active {
 /* local tags */
 
 .img {
-  text-align:center
+  text-align:center;
 }
 .nav{
-	
+	text-align:center;
 }
 
 /* when we are on a specific page on the nav bar */
