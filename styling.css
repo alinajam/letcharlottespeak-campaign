@@ -1,6 +1,5 @@
 /* Entire page (background color, etc) */
 body {
-  
 }
 
 /* different headings */
@@ -8,10 +7,10 @@ h1{
 
 }
 h2{
-	
+  text-align: left;
+  margin-left: 40px;
 }
 h3{
-
 }
 h4{
 	
@@ -19,11 +18,125 @@ h4{
 
 /* paragraph text */
 p{
-	
+  text-align: left;
+  margin-left: 40px;
 }
 
 /* SLIDESHOW */
 
+.mySlides {
+  width: 99%;
+  height: 99%;
+  position: absolute;
+  margin-left: auto;
+  top: 0px;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 0;
+  display: none;
+}
+.pictures {
+  text-align: center;
+}
+.container {
+  position: relative;
+  text-align: center;
+}
+.container > header {
+  margin: 0px 0px 0px 0px;
+  position: relative;
+  display: block;
+  /*text-shadow: 1px 1px 1px rgba(0,0,0,0.2);*/
+  text-align: left;
+}
+header {
+  display: block;
+}
+
+img{
+  display:block;
+  height:100%; 
+  object-fit: cover;
+  opacity: 100%;
+}
+
+.cb-slideshow,
+.cb-slideshow:after { 
+
+    display: block;
+    margin: auto;
+
+    position: fixed;
+    width: 100%;
+    height: 95%;
+    top: 64px;
+    left: 0px;
+    z-index: 0; 
+}
+.cb-slideshow:after { 
+    content: '';
+    /*background: transparent url(../images/pattern.png) repeat top left; 
+*/
+}
+/*.cb-slideshow li span { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  animation: fade 2s; 
+}
+.cb-slideshow li div { 
+  z-index: 1000;
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  animation: titleAnimation 36s linear infinite 0s; 
+}
+.cb-slideshow li div h3 { 
+  font-family: 'BebasNeue', 'Arial Narrow', Arial, sans-serif;
+  font-size: 240px;
+  padding: 0;
+  line-height: 200px; 
+  font-weight: lighter;
+}
+.cb-slideshow li:nth-child(1) span { 
+  background-image: url(../images/1.jpg) 
+}
+.cb-slideshow li:nth-child(2) span { 
+  background-image: url(../images/2.jpg);
+  animation-delay: 4s; 
+}
+.cb-slideshow li:nth-child(3) span { 
+  background-image: url(../images/3.jpg);
+  animation-delay: 8s; 
+}
+.cb-slideshow li:nth-child(2) div { 
+  animation-delay: 4s; 
+}
+.cb-slideshow li:nth-child(3) div { 
+  animation-delay: 8s; 
+}
+@keyframes imageAnimation { 
+  0% { opacity: 0; animation-timing-function: ease-in; }
+  8% { opacity: 1; animation-timing-function: ease-out; }
+  30% { opacity: 1 }
+  50% { opacity: 0 }
+  100% { opacity: 0 }
+}*/
+
+
+/*
 * {box-sizing: border-box;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
@@ -42,6 +155,7 @@ img {vertical-align: middle;}
   margin: auto;
 }
 
+
 .dot {
   height: 8px;
   width: 8px;
@@ -54,7 +168,7 @@ img {vertical-align: middle;}
 
 .active {
   background-color: #717171;
-}
+}*/
 
 /* fading animation */
 .fade {
@@ -191,7 +305,15 @@ a.social_link:hover{
   text-align:center;
 }
 .nav{
-	text-align:center;
+  text-align:center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: lighter;
+  font-size: x-large;
+  border: 2px solid black;
+  margin: auto;  
+  padding: 20px;
+  background: black;
+  
 }
 
 /* when we are on a specific page on the nav bar */

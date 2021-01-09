@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 <!-- the text that shows up on the tab -->
 <title>Let Charlotte Speak Campaign</title>
@@ -17,30 +19,72 @@
 </head>
 
 <body>
-<!-- the contents of the page -->
-<h1><a href="home.html">#LetCharlotteSpeak</a></h1>
+<!-- the contents of the page 
+<h1><a href="home.html">#LetCharlotteSpeak</a></h1> -->
 
-<!-- nav bar headings -->
+<!-- nav bar headings 
 <h3 class=nav>
 	<span><a href="home.html" class=selected>Home</a> &nbsp;</span> 
 	<span><a href="social.html">Social Media</a> &nbsp;</span>
 	<span><a href="news.html">News Articles</a></span>
-</h3>
+</h3>-->
 
-<!--slideshow-->
+
+
+<div class = "pictures">
+<ul class="cb-slideshow">
+	
+	<li class = "mySlides fade">
+		<span><img src = "images/image1.jpg"></span>
+		
+	</li>
+	<li class = "mySlides fade">
+		<span><img src = "images/image2.JPG"></span>
+	</li>
+	<li class = "mySlides fade">
+		<span><img src = "images/image3.jpg"></span>
+	</li>
+	
+</ul>
+</div>
+
+<a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+<a class="next" onclick="nextSlide(1)">&#10095;</a>
+
+<div class = "container">
+	<header>
+		<!--<h1><a href="home.html">#LetCharlotteSpeak</a></h1>-->
+	</header>
+	<h3 class=nav>
+		<span><a href="home.html" class=selected>Home</a> &nbsp;</span> 
+		<span><a href="social.html">Social Media</a> &nbsp;</span>
+		<span><a href="news.html">News Articles</a></span>
+	</h3>
+	<h2>Introduction</h2>
+	<p>Charlotte Kirk is an actor who was sexually violated by a powerful Hollywood executive and silenced with a coerced non-disclosure agreement. 
+	Read about her story <a href="https://www.lamag.com/mag-features/charlotte-kirk-interview" target="_blank">here</a>. <br>
+	Please amplify this campaign by sharing it with your networks and posting a selfie in a mask with #LetCharlotteSpeak on it. Thank you!
+	</p>
+	
+</div>
+
+
+
+
+<!--slideshow
 <div class="css-slideshow">
 <div class="slideshow-container">
 
 	<div class="mySlides fade">
-	  <img src="images/image1.jpg" style="height:400px">
+	  <img src="images/image1.jpg" style="height:100%">
 	</div>
 	
 	<div class="mySlides fade">
-	  <img src="images/image2.JPG" style="height:400px">
+	  <img src="images/image2.JPG" style="height:100%">
 	</div>
 
 	<div class="mySlides fade">
-		<img src="images/image3.JPG" style="height:400px">
+		<img src="images/image3.JPG" style="height:100%">
 	  </div>
 	
 	<a class="prev" onclick="nextSlide(-1)">&#10094;</a>
@@ -54,13 +98,9 @@
 	  <span class="dot"></span> 
 	</div>
 
-</div>
+</div> -->
 
-<h2>Introduction</h2>
-<p>Charlotte Kirk is an actor who was sexually violated by a powerful Hollywood executive and silenced with a coerced non-disclosure agreement. 
-Read about her story <a href="https://www.lamag.com/mag-features/charlotte-kirk-interview" target="_blank">here</a>. <br>
-Please amplify this campaign by sharing it with your networks and posting a selfie in a mask with #LetCharlotteSpeak on it. Thank you!
-</p>
+
 
 <!-- for Javascript -->
 <script>
@@ -86,7 +126,7 @@ Please amplify this campaign by sharing it with your networks and posting a self
 			dots[i].className = dots[i].className.replace(" active", "");
 		}
 		slides[slideIndex].style.display = "block";  
-		dots[slideIndex].className += " active";
+		//dots[slideIndex].className += " active";
 	}
 </script>
 
