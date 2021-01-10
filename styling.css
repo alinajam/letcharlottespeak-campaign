@@ -33,14 +33,25 @@ p{
   background-size: cover;
   background-position: 50% 50%;
   z-index: 0;
-  display: none;
+  
+  display:block;
+  margin-right: auto;
+  /*display: none;*/
 }
 .pictures {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   text-align: center;
+  opacity: 55%;
 }
 .container {
   position: relative;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  backface-visibility: 30%;
+  padding-bottom: 0.5%;
 }
 .container > header {
   margin: 0px 0px 0px 0px;
@@ -57,7 +68,7 @@ img{
   display:block;
   height:100%; 
   object-fit: cover;
-  opacity: 100%;
+  margin: 0 auto;
 }
 
 .cb-slideshow,
@@ -161,20 +172,30 @@ a:active {
 /* local tags */
 .social_container{
 	text-align:center;
+	opacity: 1;
 }
 a.social_link:hover{
 	text-decoration:none;
+	opacity: 0.5;
+	transform: scale(1.05);
 }
+.social:hover{
+	transform: scale(1.05);
+}
+
 .social{
 	display:inline-block;
 	text-align:center;
 	height:100px;
+	transition: transform .2s; /* Animation */
 }
 
 /* responsive images for the news page */
 .news_container {
+  text-align: center;
   position: relative;
   width: 50%;
+  margin: 0 auto;
 }
 
 .news_img {
@@ -184,8 +205,7 @@ a.social_link:hover{
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .news_button {
@@ -197,9 +217,10 @@ a.social_link:hover{
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  vertical-align: middle;
 }
 
-.news_container:hover .news_img {
+.news_container:hover .news_img{
   opacity: 0.3;
 }
 
@@ -212,23 +233,68 @@ a.social_link:hover{
   color: white;
   font-size: 16px;
   padding: 16px 32px;
+  display: inline-block;
 }
 
 .img {
   text-align:center;
 }
-.nav{
+.title_top{
   text-align:center;
+  /*position: fixed;*/
+  top: 0;
+  z-index: 500;
   font-family: "Bebas Neue", sans-serif;
-  font-weight: lighter;
   font-size: x-large;
   border: 2px solid black;
   margin: auto;  
-  padding: 20px;
+  padding: 0px;
   background: black;
-  
+  color: gray;
+}
+a.title{
+  color: #add8e6;
 }
 
+a.title:hover{
+	color: white;
+	
+}
+.nav{
+  text-align:center;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: lighter;
+  font-size: x-large;
+  border: 1px solid black;
+  margin: auto;  
+  padding: 0px;
+  background: black;
+  color: gray;
+  
+}
+a.nav_link {
+	color: gray;
+}
+a.nav_link:hover{
+	text-decoration: underline;
+	color: lightgray;
+}
+a.nav_link:active{
+	color: white;
+}
+a.selected{
+	color:lightgray;
+}
+a.selected:hover{
+	color: lightgray;
+}
+a.selected:active{
+	color: white;
+}
 /* when we are on a specific page on the nav bar */
 a.selected:link{
 	text-decoration: underline;
