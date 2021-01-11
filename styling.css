@@ -1,16 +1,22 @@
 /* Entire page (background color, etc) */
 body {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 /* different headings */
 h1{
-
+  margin-bottom: 0;
+  margin-top: 15px;
 }
 h2{
   text-align: left;
   margin-left: 40px;
 }
 h3{
+  font-weight: lighter;
+  margin-top: 0;
 }
 h4{
 	
@@ -28,15 +34,15 @@ p{
   width: 99%;
   height: 99%;
   position: absolute;
-  margin-left: auto;
+  margin: auto;
   top: 0px;
   background-size: cover;
   background-position: 50% 50%;
   z-index: 0;
   
-  display:block;
+  /*display:block;*/
   margin-right: auto;
-  /*display: none;*/
+  display: none;
 }
 .pictures {
   display: block;
@@ -105,7 +111,7 @@ img{
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 45%;
+  top: 60%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -118,10 +124,12 @@ img{
 }
 
 .next {
+  z-index: 1000;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 .prev {
+  z-index: 1000;
   left: 0;
   border-radius: 3px 0 0 3px;
 }
@@ -240,11 +248,12 @@ a.social_link:hover{
   text-align:center;
 }
 .title_top{
-  text-align:center;
+  text-align:left;
   /*position: fixed;*/
   top: 0;
   z-index: 500;
   font-family: "Bebas Neue", sans-serif;
+  font-weight: lighter;
   font-size: x-large;
   border: 2px solid black;
   margin: auto;  
@@ -254,14 +263,17 @@ a.social_link:hover{
 }
 a.title{
   color: #add8e6;
+  font-weight: lighter;
+  padding-left: 20px;
 }
 
 a.title:hover{
 	color: white;
 	
 }
+
 .nav{
-  text-align:center;
+  text-align:right;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -271,7 +283,7 @@ a.title:hover{
   font-size: x-large;
   border: 1px solid black;
   margin: auto;  
-  padding: 0px;
+  padding-right: 20px;
   background: black;
   color: gray;
   
