@@ -58,15 +58,23 @@ p{
   
 }
 .gradient2 {
-  background: linear-gradient(rgba(0,0,00,0.8), rgba(0,0,0,1));;
+  background: linear-gradient(rgba(0,00,0,0.8), rgba(0,0,0,1));;
   width: 100%;
   height: 200px;
   
 }
 .blackbg {
-  background: black;
+  background: rgb(0,0,0);
   width: 100%;
-  height: 600px;
+  height: 470px;
+}
+.footer {
+  background: rgb(231, 231, 231);
+  height: 60px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  padding: 50px;
+  line-height: 1.75;
 }
 
 .gradient_bg {
@@ -80,6 +88,7 @@ p{
   text-align: center;
   background-color: rgba(255, 255, 255, 0);
   padding-bottom: 0.5%;
+  height: 50em;
 }
 .container > header {
   margin: 0px 0px 0px 0px;
@@ -155,7 +164,7 @@ img{
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 60%;
+  top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -299,10 +308,10 @@ a.social_link:hover{
   z-index: 5000;
   font-family: "Bebas Neue", sans-serif;
   font-weight: lighter;
-  font-size: xx-large;
+  font-size: 3em;
   color: gray;
   padding-left: 20px;
-  margin-top: -37px;
+  margin-top: -50px;
   margin-bottom:-30px;
 
   
@@ -324,7 +333,7 @@ a.title:hover{
   color: black;
   position: fixed;
   width:100%;
-  height:100px;
+  height:90px;
   z-index: 500;
 }
 .nav{
@@ -334,7 +343,7 @@ a.title:hover{
   position: sticky;
   top: 26px;
   float: right;
-  padding-top: 26px;
+  padding-top: 50px;
   z-index: 500;
   font-family: "Bebas Neue", sans-serif;
   font-weight: lighter;
