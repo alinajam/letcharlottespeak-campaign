@@ -1,6 +1,6 @@
 /* Entire page (background color, etc) */
 body {
-  margin-top: 0;
+  margin-top: 60px;
   margin-right: 0;
   margin-left: 0;
 }
@@ -302,8 +302,8 @@ a.social_link:hover{
   font-size: xx-large;
   color: gray;
   padding-left: 20px;
-  margin-top: -37px;
-  margin-bottom:-30px;
+  margin-top: -70px;
+  margin-bottom:0px;
 
   
 }
@@ -328,13 +328,12 @@ a.title:hover{
   z-index: 500;
 }
 .nav{
-  top: 0;
   text-align:right;
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 26px;
+  top: 60px;
   float: right;
-  padding-top: 26px;
+  padding-top: 0px;
   z-index: 500;
   font-family: "Bebas Neue", sans-serif;
   font-weight: lighter;
