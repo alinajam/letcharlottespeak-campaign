@@ -23,14 +23,17 @@
 
 <div class = "pictures">
 	
-<ul class="cb-slideshow">
+<ul class="img-slideshow">
 	
 	<li class = "mySlides fade">
-		<span><img src = "images/image1.jpg"></span>
+		<span><img src = "images/image4.jpg"></span>
 		
 	</li>
 	<li class = "mySlides fade">
-		<span><img src = "images/image2.JPG"></span>
+		<span><img src = "images/image1.JPG"></span>
+	</li>
+	<li class = "mySlides fade">
+		<span><img src = "images/image2.jpg"></span>
 	</li>
 	<li class = "mySlides fade">
 		<span><img src = "images/image3.jpg"></span>
@@ -63,46 +66,61 @@
 			<div class = "gradient">.</div>
 			<div class = "gradient2">.</div>
 			<div class = "blackbg">.</div>
-			<div class = "footer" style='position:fixed;bottom:0;'><b>Created by OxyOS</b><br>Joaquín Madrid Larrañaga & Zerlina Lai</div>
+			<div class = "footer"><b>Created by OxyOS</b><br>Joaquín Madrid Larrañaga & Zerlina Lai</div>
 		</div>
 	
 
 
 	<div class = "intro">
 	<h2 class = "intro_title">Introduction</h2>
-	<p class = "intro_p">Charlotte Kirk is an actor who was sexually violated by a powerful Hollywood executive and silenced with a coerced non-disclosure agreement. 
-	Read about her story <a href="https://www.lamag.com/mag-features/charlotte-kirk-interview" target="_blank">here</a>. <br>
-	Please amplify this campaign by sharing it with your networks and posting a selfie in a mask with #LetCharlotteSpeak on it. Thank you!
-	</p></div>
+		<!--<p class = "intro_p">Charlotte Kirk is an actor who was sexually violated by a powerful Hollywood executive and silenced with a coerced non-disclosure agreement. 
+		Read about her story <a href="https://www.lamag.com/mag-features/charlotte-kirk-interview" target="_blank">here</a>. <br>
+		Please amplify this campaign by sharing it with your networks and posting a selfie in a mask with #LetCharlotteSpeak on it. Thank you!
+		</p>-->
+
+		<p class = "intro_p">
+			An actor. A dog mom. A daughter. A friend. A writer. A fiancee. Charlotte Kirk wants to be defined by her accomplishments, her work, and who she is. Instead,
+			over almost a decade, she's been defined by the powerful men in the film industry who have abused her, silenced her, and thus thrust her into the public eye.
+			Charlotte Kirk was sexually violated by a powerful Hollywood executive and silenced with a coerced non-disclosure agreement.<br>
+			Read more about her story <a href="https://www.lamag.com/mag-features/charlotte-kirk-interview" target="_blank">here</a>.
+			Please amplify this campaign by sharing it with your networks and posting a selfie in a mask with #LetCharlotteSpeak on it. Thank you!<br>
+		</p>
+
+		<span><div class = "body_imgs"><img src = "images/info_2.JPG"></div>
+			<div class = "body_imgs"><img src = "images/image3.JPG"></div>
+		<div class = "body_imgs"><img src = "images/info_1.JPG"></div></span>
+
+	</div>
+
 	
 </div>
 
 
 <!-- for Javascript -->
 <script>
-	var slideIndex = 0;
+	var index = 0;
 	var slides = document.getElementsByClassName("mySlides");
 	var dots = document.getElementsByClassName("dot");
-	showSlides(slideIndex);
+	showSlides(index);
 	setInterval(function(){ nextSlide(1); }, 6000);
 
 	function nextSlide(n) {
-		  slideIndex += n;
-		  showSlides(slideIndex);
+		  index += n;
+		  showSlides(index);
 	}
 	
 	function showSlides(n) {
 		var i;
-		if (n >= slides.length) {slideIndex = 0}  
-		if (n < 0) {slideIndex = slides.length - 1}  
+		if (n >= slides.length) {index = 0}  
+		if (n < 0) {index = slides.length - 1}  
 		for (i = 0; i < slides.length; i++) {
 			slides[i].style.display = "none";  
 		}  
 		for (i = 0; i < dots.length; i++) {
 			dots[i].className = dots[i].className.replace(" active", "");
 		}
-		slides[slideIndex].style.display = "block";  
-		//dots[slideIndex].className += " active";
+		slides[index].style.display = "block";  
+		//dots[index].className += " active";
 	}
 </script>
 
